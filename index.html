@@ -6,24 +6,26 @@
   <title>Quizition AI Mockup</title>
 
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #0d0d0d;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-      font-family: system-ui, sans-serif;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  background: #0d0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;   /* height 대신 min-height */
+  overflow-x: hidden;  /* 가로만 숨기고 */
+  overflow-y: auto;    /* 세로는 스크롤 허용 */
+  font-family: system-ui, sans-serif;
+}
 
-    /* 화면 꽉 채우지 않음 — 너가 원한 원래 상태 */
-    .mockup-wrapper {
-      position: relative;
-      width: min(100%, 1800px);
-      max-width: 1800px;
-    }
+
+.mockup-wrapper {
+  position: relative;
+  width: min(90%, 1700px); /* 100%, 1800px보다 살짝 줄이기 */
+  max-width: 1700px;
+}
+
 
     .mockup-wrapper img {
       width: 100%;
@@ -44,10 +46,10 @@
     }
 
     iframe {
-      width: 142%;
-      height: 142%;
+      width: 153%;
+      height: 153%;
       border: none;
-      transform: scale(0.7);
+      transform: scale(0.65);
       transform-origin: top left;
     }
   </style>
