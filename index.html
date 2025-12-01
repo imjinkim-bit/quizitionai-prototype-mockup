@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizition AI Mockup</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: system-ui, sans-serif;
+    }
+
+    /* 화면 꽉 채우지 않음 — 너가 원한 원래 상태 */
+    .mockup-wrapper {
+      position: relative;
+      width: min(100%, 1800px);
+      max-width: 1800px;
+    }
+
+    .mockup-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* PNG 기준 재조정된 모니터 실제 화면 위치 */
+    .screen-area {
+      position: absolute;
+      top: 21.4%;
+      left: 21.3%;
+      width: 57.6%;
+      height: 51.3%;
+      overflow: hidden;
+      background: #e2ebe2;
+      box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    }
+
+    iframe {
+      width: 142%;
+      height: 142%;
+      border: none;
+      transform: scale(0.7);
+      transform-origin: top left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mockup-wrapper">
+    <img src="./quizition-ai-mockup-4k.png" alt="Monitor Mockup" />
+    <div class="screen-area">
+      <iframe src="https://quizition-ai.vercel.app/"></iframe>
+    </div>
+  </div>
+</body>
+</html>
